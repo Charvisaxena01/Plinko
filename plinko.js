@@ -1,15 +1,15 @@
 class plinko{
     constructor(x,y){
 
-    var options = {
+    var options1 = {
         isStatic: true,
         restitution:1,
         friction:0
     }
-    this.x = x
-    this.y = y
+    //now run
+    
     this.r = 10
-    this.body = Bodies.circle(x,y,this.r,options)
+    this.body = Bodies.circle(x,y,this.r,options1)
     World.add(world,this.body)
     }
     display(){

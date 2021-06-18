@@ -1,13 +1,12 @@
 class Ground  {
     constructor(x,y,width,height){
-       var options={
+       var options3={
             isStatic:true
         }
-        this.x = x;
-        this.y = y;
+        
         this.width = width;
         this.height = height;
-    this.body = Bodies.rectangle(x,y,this.width,this.height,options)
+    this.body = Bodies.rectangle(x,y,this.width,this.height,options3)
         World.add(world,this.body)
        
     }
@@ -17,7 +16,6 @@ class Ground  {
       
         push();
         translate(groundpos.x, groundpos.y);
-        
        // strokeWeight(4);
         rectMode(CENTER);
         fill("white");
